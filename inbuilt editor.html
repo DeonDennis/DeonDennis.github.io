@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Inbuilt code editor</title>
+        <style>
+            textarea{
+                background:rgb(130, 130, 131);
+                color:white;
+                padding:30px;
+                font-size:large;
+            }
+            #outputer{
+                width:100%;
+                height:500px;
+                background:rgb(41, 41, 41);
+                color:white;
+                padding:10px;
+            }
+            #deon{
+                width:100px;
+                height:;
+                padding:5px;
+                background: red;
+                color:yellow;
+                font-size: x-large;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <button onclick="run()" id="deon">RUN</button><br>
+            <textarea cols="170" rows="40" contenteditable id="codes"> </textarea>
+            <div id="outputer"></div>
+        </div>
+        <script>
+            function run(){
+                let out =document.getElementById("codes").value;
+                document.getElementById("outputer").innerHTML=out;
+            }
+        </script>
+    </body>
+</html>
